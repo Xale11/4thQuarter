@@ -1,0 +1,66 @@
+.brandMsg{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.brandMsgContainer{
+    background-color: var(--black);
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    gap: 1.25em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.25em;
+}
+
+.formTitle{
+    font-size: 1.25em;
+}
+
+textarea{
+    border-radius: 1em;
+    padding: 0.25em 0.5em;
+}
+
+.form button{
+    border: 0em;
+    outline: none;
+    background-color: var(--red);
+    color: white;
+    font-size: 1.25em;
+    border-radius: 1.25em;
+    padding: 0.25em 1em;
+    cursor: pointer;
+}
+
+.form button:hover{
+    padding: 0.25em 1.25em;
+}
+
+.resetBtn{
+    background-color: green;
+    color: white;
+    border-radius: 1em;
+    padding: 0em 1em;
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.resetBtn:hover{
+    padding: 0em 1.25em;
+}

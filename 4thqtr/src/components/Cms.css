@@ -1,0 +1,51 @@
+.cms{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.cmsContainer{
+    margin-top: 2em;
+    background-color: var(--black);
+    width: 70%;
+    border-radius: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.cmsTitle{
+    font-size: 2em;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.cmsLink{
+    background-color: white;
+    color: var(--black);
+    width: fit-content;
+    border-radius: 1em;
+    padding: 0em 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.cmsLink:hover{
+    background-color: var(--red);
+}
+
+.signout{
+    background-color: var(--red);
+}
+
+.signout:hover{
+    padding: 0em 2em;
+}

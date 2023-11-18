@@ -1,0 +1,33 @@
+:root{
+  --red: #DE0000;
+  --black: #1E1E1E;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face{
+  font-family: "Dhurjati";
+  src: url("./font/Dhurjati-Regular.ttf");
+  font-size: normal;
+}
+
+::-webkit-scrollbar{
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(80, 78, 78);
+  border-radius: 1em;
+}

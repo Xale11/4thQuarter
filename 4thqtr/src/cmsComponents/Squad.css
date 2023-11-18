@@ -1,0 +1,63 @@
+.squad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2em;
+}
+
+.squadTitle{
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.squadContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--black);
+    border-radius: 1em;
+    width: 70%;
+    height: fit-content;
+    gap: 1em;
+    padding: 1em;
+    color: white;
+}
+
+.squadPhotoList{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.photo{
+    width: 15em;
+    cursor: pointer;
+}
+
+.photo img{
+    width: 100%;
+}
+
+.deleteIt{
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 0em;
+}
+
+.deleteIt div{
+    background-color: var(--red);
+    width: fit-content;
+    display: flex;
+    padding: 0em 1em;
+    border-radius: 1em;
+}

@@ -1,0 +1,120 @@
+import React, { useEffect, useState } from 'react'
+import img from "../img/shop.png"
+import shorts1 from "../img/shorts1_1.png"
+import shirt1 from "../img/shirt1.jpg"
+import {BiSolidCart, BiLogoTiktok} from "react-icons/bi"
+import { FiMenu } from "react-icons/fi"
+import {AiFillInstagram} from "react-icons/ai"
+import {IoMail} from "react-icons/io5"
+import logo from "../img/logo.png"
+import "./Shop3.css"
+import { useNavigate } from 'react-router-dom'
+import Credits from './Credits'
+import { uploadContactInfo, uploadPromoClothes } from '../firebase/firebase'
+import Item from './Item'
+import Cart from './Cart'
+import { useStateContext } from '../context/context'
+import Menu from './Menu'
+
+const Shop3 = () => {
+
+    const {showCart, setShowCart, cart, setCart, amount, showMenu, setShowMenu} = useStateContext()
+
+    const navigate = useNavigate()
+    const [clothes, setClothes] = useState()
+    const [test, setTest] = useState(false)
+
+    const [info, setInfo] = useState()
+
+    const fetchContactInfo = async () => {
+        let data = await uploadContactInfo()
+        return setInfo(data)
+    }
+
+    const fetchPromoData = async () => {
+        let data = await uploadPromoClothes()
+        return setClothes([...data])
+    }
+
+    useEffect(() => {
+        fetchPromoData()
+        fetchContactInfo()
+    }, [])
+
+    console.log(101, clothes)
+
+  return (
+    <div className='shop'>
+        {showCart && <div className="cartAbsolute">
+          <Cart/>
+        </div>}
+        {showMenu && <div className="cartAbsolute">
+          <Menu/>
+        </div>}
+        <div className="menuIcon" onClick={() => setShowMenu(true)}>
+            <FiMenu/>
+        </div>
+        <div className="cartIcon" onClick={() => setShowCart(true)}>
+            <BiSolidCart/>
+            {cart?.length > 0 && <div>{amount}</div>}
+        </div>
+        <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
+        <div className="navItems black">
+          <div className="navItem" onClick={() => navigate("/")}>Home</div>
+          <div className="navItem" onClick={() => navigate("/shop")} style={{color: "var(--red)"}}>Shop</div>
+          <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
+          <div className="navItem" onClick={() => navigate("/brand")}>Our Vision</div>
+          <div className="navItem" onClick={() => navigate("/contact")}>Contact</div>
+          <div className="navItem" onClick={() => navigate("/policies")}>Policies</div>
+        </div>
+        <div className="socialsList">
+          <AiFillInstagram onClick={() => {window.open(`${info?.insta?.link}`)}}/>
+          <BiLogoTiktok onClick={() => {window.open(`${info?.tiktok?.link}`)}}/>
+          <IoMail onClick={() => navigate("/contact")}/>
+        </div>
+        <div className="shopContent">
+            <div className="shopCards">
+                {clothes?.map((item) => {
+                    let img1 = item?.img[0].url
+                    return(
+                        <Item item={item}></Item>
+                    )
+                })}
+                {/* <div className="shopCard1">
+                    <div className="scImg">
+                        <div className="buyNow">BUY NOW </div>
+                        <img src={shirt1} alt="" />
+                        <div className="shopCardDets">
+                            <div className="scInfo">
+                                <div className="scTitle">ONE OF ONE GRAPHIC TEE</div>
+                                <div className="scTitle price">£19.99</div>
+                                <div className="scBtns">
+                                    <div>ADD TO BASKET</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="shopCard2">
+                    <div className="scImg">
+                        <div className="buyNow">BUY NOW </div>
+                        <img src={shorts1} alt="" />
+                        <div className="shopCardDets">
+                            <div className="scInfo">
+                                <div className="scTitle">ONE OF ONE GRAPHIC TEE</div>
+                                <div className="scTitle price">£19.99</div>
+                                <div className="scBtns">
+                                    <div>ADD TO BASKET</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
+            </div>
+        </div>
+        <Credits/>
+    </div>
+  )
+}
+
+export default Shop3

@@ -1,0 +1,33 @@
+.success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.successContainer{
+    margin-top: 5em;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--black);
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 1.5em;
+}
+
+.return{
+    background-color: var(--red);
+    padding: 0em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.return:hover{
+    padding: 0em 1.5em;
+}

@@ -1,0 +1,366 @@
+.shop{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0em;
+}
+
+.menuIcon{
+    display: none;
+    position: absolute;
+    top: -1%;
+    left: 2%;
+    font-size: 4em;
+    cursor: pointer;
+    transition: all 300ms linear;
+    z-index: 4;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.cartIcon{
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    font-size: 4em;
+    cursor: pointer;
+    transition: all 300ms linear;
+    z-index: 4;
+    display: flex;
+    align-items: flex-start;
+}
+
+.cartIcon div{
+    font-size: 0.3em;
+    background-color: var(--red);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 0.25em;
+    line-height: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0.1em;
+}
+
+.black{
+    color: black;
+    font-size: 1.5em;
+}
+
+.cartIcon:hover{
+    color: var(--red);
+}
+
+.logoIcon{
+    /* position: absolute;
+    top: 2%;
+    left: 1%; */
+    cursor: pointer;
+    transition: all 300ms linear;
+    z-index: 4;
+    object-fit:cover;
+    width: 3em;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.logoIcon:hover{
+    width: 3.5em;
+    margin-top: 0.5em;
+}
+
+.shopImg{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 30vw;
+}
+
+.socialsList{
+    display: flex;
+    gap: .25em;
+    font-size: 2em;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.socialsList svg:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+.shopContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.shopTitle{
+    font-size: 3em;
+    height: 12vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopTitle div{
+    position: absolute;
+    transform: translateY(-10%);
+}
+
+.shopCards{
+    height: calc(100vh - 12vh);
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+    overflow: auto;
+    row-gap: 0em;
+}
+
+.shopCard1{
+    position: relative;
+    aspect-ratio: 4 / 6;
+    height: 95%;
+    /* border: 1px solid gray; */
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.shopCard1:hover{
+    height: 99%;
+    cursor: pointer;
+}
+
+
+.scImg{
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.buyNow{
+    position: absolute;
+    background-color: var(--black);
+    color: white;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    padding: 0em 1em;
+    border-radius: 1em;
+    line-height: 1.5em;
+    transition: all 300ms linear;
+}
+
+.buyNow:hover{
+    padding: 0em 1.5em;
+}
+
+.scImg img{
+    height: 100%;
+    /* border-top-left-radius: 2em;
+    border-top-right-radius: 2em; */
+    object-fit:cover;
+}
+
+.shopCard2{
+    position: relative;
+    aspect-ratio: 4 / 6;
+    height: 95%;
+    /* border: 1px solid gray; */
+    margin-right: 5em;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.shopCard2:hover{
+    height: 99%;
+    cursor: pointer;
+}
+
+.shopCardDets{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.scInfo{
+    background-color: white;
+    /* border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em; */
+    color: black;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em;
+    align-items: flex-start;
+    line-height: 1.25em;
+}
+
+.scBtns{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.scBtns div{
+    background-color: var(--black);
+    border-radius: 1em;
+    margin-top: 0.25em ;
+    margin-bottom: 0.25em ;
+    width: fit-content;
+    padding: 0em 1em;
+    color: white;
+}
+
+.price{
+    font-family: monospace;
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1441px) {
+/* Large Laptops*/
+}
+
+@media screen and (max-width: 1440px) {
+/* Normal Laptops*/
+    .black{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+/*Large Tablets, Ipads, Small Laptop (Landscape)*/
+}
+
+@media screen and (max-width: 1024px) and (min-width: 1023px) and (orientation: portrait) {
+/*Ipad Pro (Portrait)*/
+    .shopCard1{
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 920px) and (min-width: 821px) {
+/*2 in 1's, and some large tablets in portrait*/
+    .shopCard1{
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 820px/*or 920px*/) and (orientation: portrait) {
+/* Large Tablets, Ipads, Small Laptop, 2 in 1's (Portrait)*/
+    .shopCard1{
+        height: 45%;
+    }
+    .shopCards{
+        row-gap: 6em;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape){
+/* small tablets - landscape*/
+    .shopCard1{
+        height: 85%;
+    }
+    .scInfo{
+        font-size: .9em;
+    }
+    .buyNow{
+        font-size: 0.8em;
+    }
+    .shopCards{
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+/* small tablets - portrait*/
+    .shopCards{
+        row-gap: 1em;
+        gap: 0.5em;
+        padding-bottom: 1em;
+    }
+    .shopCard1{
+        margin: 0em;
+    }
+    .scInfo{
+        font-size: .8em;
+    }
+    .scTitle{
+        text-align: left;
+    }
+    .scBtns{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+/*large mobile - portrait*/
+    .shopCards{
+        row-gap: 1.5em;
+    }
+    .shopCard1{
+        height: 55%;
+    }
+    .scBtns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .scBtns div{
+        font-size: 1.25em;
+        padding: 0.5em 1em;
+    }
+    .navItems{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 430px){
+/*large mobile - landscape*/
+    .scTitle{
+        text-align: left;
+    }
+    .scInfo{
+        font-size: 1em;
+    }
+    .menuIcon{
+        display: block;
+    }
+    
+}
+
+@media screen and (orientation: landscape) and (max-height: 420px){
+    /*medium mobile - landscape*/
+        .shopCard1{
+            height: 130%;
+        }
+    }
+
+@media screen and (max-width: 320px){
+/*optional - iphone 4*/
+}

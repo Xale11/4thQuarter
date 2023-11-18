@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Dhurjati";
+  overflow: hidden;
+  position: relative;
+}
+
+.cartAbsolute{
+  z-index: 100;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+}

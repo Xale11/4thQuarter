@@ -1,0 +1,50 @@
+.delivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 1em;
+}
+
+.deliveryTitle{
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.deliveryContainer{
+    width: 70%;
+    background-color: var(--black);
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    overflow-y: auto;
+}
+
+.rateListTitle{
+    font-size: 1.5em;
+}
+
+.rateList{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.rateCard{
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    gap: 0.5em;
+}
+
+.delBtn:hover{
+    text-decoration: underline;
+}
+
+.deleteConfirm:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+.galleryEditor{
+    padding-top: 1.5em;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.galleryEditorTitle{
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.galleryContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    background-color: var(--black);
+    padding: 1em;
+    color: white;
+    border-radius: 1em;
+
+}
+
+.metaData{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.metaData input{
+    outline: none;
+    border: 0px;
+    border-radius: 1em;
+    margin-bottom: 0.25em;
+    padding-left: 1em;
+}
+
+.metaData button{
+    border: none;
+    margin-bottom: 0.25em;
+    width: fit-content;
+    padding: 0em 1em;
+    color: black;
+    background-color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.metaData button:hover{
+    padding: 0em 1.75em;
+}
+
+.metaButtons{
+    display: flex;
+    gap: 1em;
+}

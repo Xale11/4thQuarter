@@ -1,0 +1,410 @@
+.allClothes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.allClothesTitle{
+    font-size: 3em;
+}
+
+.addClothes{
+    background-color: var(--red);
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.addClothes:hover{
+    padding: 0em 1.5em;
+}
+
+.addClothesDets{
+    background-color: var(--black);
+    color: white;
+    padding: 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 85vw;
+}
+
+.newDets{
+    display: flex;
+    gap: 1em;
+    font-size: 1.5em;
+}
+
+.newDets input{
+    outline: none;
+    border: 0px;
+    border-radius: 1em;
+    padding: 0em 1em;
+}
+
+.newDets textarea{
+
+}
+
+.colourItems{
+    flex-direction: column;
+}
+
+.colourItemsTitle{
+    align-self: flex-start;
+}
+
+.clothesTypes{
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap
+}
+
+.clothesType{
+    color: black;
+    background-color: white;
+    border-radius: 1em;
+    padding: 0em 1em;
+    cursor: pointer;
+}
+
+.clothesType:hover{
+    background-color: var(--red);
+}
+
+.isPromo{
+    background-color: white;
+    aspect-ratio: 1/1;
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    border-radius: 60em;
+}
+
+.addColours{
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+    padding: 0em 1em;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.addColours:hover{
+    padding: 0em 1.5em;
+}
+
+.addNewItem{
+    background-color: var(--red);
+    padding: 0.25em 1em;
+    width: fit-content;
+    font-size: 1.5em;
+    border-radius: 1em;
+    color: white;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.addNewItem:hover{
+    padding: .25em 1.5em;
+}
+
+.colorEdits{
+    border-radius: 1em;
+    border: 1px solid white;
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.closeColours{
+    background-color: red;
+    width: fit-content;
+    padding: 0em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.closeColours:hover{
+    padding: 0em 1.5em;
+}
+
+.colorDets{
+    display: flex;
+    gap: 1em;
+}
+
+.colorDets input{
+    border-radius: 1em;
+}
+
+.sizes{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sizeType{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.sizePicked{
+    background-color: white;
+    height: 1em;
+    width: 1em;
+    border-radius: 10em;
+    cursor: pointer;
+}
+
+.sizeDets{
+    display: flex;
+    gap: 1.5em;
+}
+
+.sizeDet{
+    display: flex;
+    gap: 1em;
+}
+
+.addNewColour{
+    width: fit-content;
+    background-color: var(--red);
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    align-self: center;
+    color: white;
+    border: 0px;
+    outline: none;
+}
+
+.addNewColour:hover{
+    padding: 0.5em 1.5em;
+}
+
+.stockInfo{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.coloursList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.colourOption{
+    font-size: 1.5em;
+    display: flex;
+    gap: 1em;
+}
+
+.colourOptionEdit{
+    background-color: var(--red);
+    width: fit-content;
+    padding: 0em 1em;
+    border-radius: 1em;
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clothingListNav{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: 2.5em;
+}
+
+.clothingList{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clothingItem{
+    display: flex;
+    width: 20em;
+    flex-direction: column;
+    align-items: center;
+    gap: 0em;
+    cursor: pointer;
+    color: white;
+    background-color: var(--black);
+    border-radius: 1em;
+    padding-top: 1em;
+    transition: all 300ms linear;
+}
+
+
+
+.clothingItem img{
+    width: 95%;
+}
+
+.itemEdit{
+    background-color: var(--black);
+    width: 100%;
+    color: white;
+    border-radius: 1em;
+}
+
+.updateDets{
+    display: flex;
+    gap: 0.5em;
+    margin-left: 0.5em;
+    padding: 1em 0em;
+}
+
+.updateDetsInput{
+    outline: none;
+    border: 0px;
+    border-radius: 1em;
+    padding: 1em;
+    width: max-content;
+}
+
+.updateDets textarea{
+    resize: vertical;
+}
+
+.updateColours{
+    align-self: flex-start;
+}
+
+.itemColours{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.setColourList{
+    display: flex;
+    gap: 1em;
+}
+
+.editColourItem{
+    width: 97%;
+    
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 0.5em 0em;
+    align-self: flex-start;
+}
+
+.editColourItem input{
+    padding: 0em;
+    padding-left: 0.5em ;
+    padding-right: 0.5em ;
+}
+
+.lineBr{
+    border-top: 1px solid white;
+    width: 100%;
+    height: 1px;
+}
+
+.updatedSizes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.updatedColourDets{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.updatedColourDets input{
+    padding: 0em;
+    padding-left: 0.25em;
+}
+
+.resetDets{
+    background-color: var(--red);
+    width: fit-content;
+    padding: 0em 1em;
+    border-radius: 1em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.resetDets:hover{
+    padding: 0em 1.5em;
+}
+
+.updateOptions{
+    display: flex;
+    gap: 1em;
+}
+
+.delete{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.confirmDelete{
+    border: 1px solid white;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.confirmDelete:hover{
+    padding: 0em 1em;
+}
+
+.updateImageList{
+    margin-left: .25em;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.editImg{
+    display: none;
+}
+
+.updateImageList .listContainer{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 1em;
+    padding: 0em 0.25em;
+    height: fit-content;
+}
+
+.updateImageList .listContainer:hover .editImg{
+    display: block;
+}
+
+.bgRed{
+    background-color: var(--red);
+}
+
+.closeExtra{
+    background-color: var(--red);
+    width: fit-content;
+    padding: 0em 1em;
+    border-radius: 1em;
+    margin-left: 0.5em;
+}
+
+.closeExtra:hover{
+    padding: 0em 1.5em;
+}
