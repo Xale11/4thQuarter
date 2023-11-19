@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffba8507.css",
+    "main.js": "/static/js/main.37e151b4.js",
+    "static/media/homeTest.jpg": "/static/media/homeTest.03b166fcaa1ef272ac64.jpg",
+    "static/media/shirt1.jpg": "/static/media/shirt1.abc665548f34ce39f619.jpg",
+    "static/media/edit1.png": "/static/media/edit1.f5665302f61cb9a61e5f.png",
+    "static/media/Dhurjati-Regular.ttf": "/static/media/Dhurjati-Regular.c66f1204a3752dc6c717.ttf",
+    "static/media/test.png": "/static/media/test.88496be33b3904c8c681.png",
+    "static/media/slide1.png": "/static/media/slide1.51119e01ac7f1162f3d2.png",
+    "static/media/shorts1_1.png": "/static/media/shorts1_1.b9b2ae3ff38ba0c7d557.png",
+    "static/media/lb1.png": "/static/media/lb1.bc9112de54ac89f55fd8.png",
+    "static/media/logo.png": "/static/media/logo.85f53918e90a6726c159.png",
+    "static/media/shop.png": "/static/media/shop.4e9778fcc11da820f88d.png",
+    "index.html": "/index.html",
+    "main.ffba8507.css.map": "/static/css/main.ffba8507.css.map",
+    "main.37e151b4.js.map": "/static/js/main.37e151b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffba8507.css",
+    "static/js/main.37e151b4.js"
+  ]
+}

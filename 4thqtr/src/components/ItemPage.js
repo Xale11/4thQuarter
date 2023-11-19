@@ -156,7 +156,7 @@ const ItemPage = () => {
             return
         } else {
             try {
-                await fetch("http://localhost:4000/checkout", {
+                await fetch("/checkout", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
