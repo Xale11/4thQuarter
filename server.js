@@ -1,4 +1,5 @@
 require("dotenv").config()
+const path = require("path")
 
 let cors = require("cors")
 
@@ -6,7 +7,25 @@ const express = require("express")
 const app = express()
 app.use(cors())
 app.use(express.json())
-app.use(express.static("public"))
+
+const _dirname = path.dirname("")
+const buildPath = path.join(_dirname , "./4thqtr/build")
+
+app.use(express.static(buildPath))
+
+app.get("/*", function(req, res){
+
+    res.sendFile(
+        path.join(__dirname, "./4thqtr/build/index.html"),
+        function (err) {
+          if (err) {
+            res.status(500).send(err);
+          }
+        }
+      );
+
+})
+
 const port = process.env.PORT || 4000;
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY)
