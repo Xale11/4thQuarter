@@ -1,5 +1,4 @@
 import './App.css';
-import All from './components/all';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Context, { useStateContext } from './context/context';
 import Cms from './components/Cms';
@@ -9,7 +8,6 @@ import Policies from './cmsComponents/Policies';
 import Contact from './cmsComponents/Contact';
 import Squad from './cmsComponents/Squad';
 import GalleryEditor from './cmsComponents/GalleryEditor';
-import Shop2 from './components/Shop2';
 import Home from './components/Home';
 import Brand from './components/Brand';
 import Gallery from './components/Gallery';

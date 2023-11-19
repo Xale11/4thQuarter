@@ -5,7 +5,6 @@ import {AiFillInstagram} from "react-icons/ai"
 import {IoMail} from "react-icons/io5"
 import logo from "../img/logo.png"
 import img from "../img/shop.png"
-import shorts1 from "../img/shorts1_1.png"
 import { useNavigate, useParams } from 'react-router-dom'
 import { uploadClothesItem, uploadContactInfo, uploadShippingRates, uploadSimialrClothes } from '../firebase/firebase'
 import { useStateContext } from '../context/context'

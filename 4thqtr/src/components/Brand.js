@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Brand.css"
 import logo from "../img/logo.png"
-import slide1 from "../img/slide1.png"
 import {BiSolidCart, BiLogoTiktok} from "react-icons/bi"
 import {AiFillInstagram} from "react-icons/ai"
 import {IoMail} from "react-icons/io5"

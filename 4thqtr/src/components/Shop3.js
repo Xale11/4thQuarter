@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import img from "../img/shop.png"
-import shorts1 from "../img/shorts1_1.png"
-import shirt1 from "../img/shirt1.jpg"
 import {BiSolidCart, BiLogoTiktok} from "react-icons/bi"
 import { FiMenu } from "react-icons/fi"
 import {AiFillInstagram} from "react-icons/ai"

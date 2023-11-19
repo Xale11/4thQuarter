@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import "./Cart.css"
-import shorts1 from "../img/shorts1_1.png"
 import { FiTrash } from "react-icons/fi"
 import { useStateContext } from '../context/context'
 import { uploadShippingRates } from '../firebase/firebase'
