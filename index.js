@@ -1,5 +1,11 @@
-require("dotenv").config()
 const path = require("path")
+
+//only use for local development
+require("dotenv").config()
+
+// use for aws depolyment
+// const dotenvPath = path.resolve(__dirname, '../config4thqtr/app.env');
+// require('dotenv').config({ path: dotenvPath });
 
 let cors = require("cors")
 
@@ -135,4 +141,4 @@ app.post("/checkout", async (req, res) => {
     }
 })
 
-app.listen(port)
+app.listen(port, () => console.log("Listening on port 4000", process.env.SUCCESS_URL))
