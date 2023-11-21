@@ -141,4 +141,4 @@ app.post("/checkout", async (req, res) => {
     }
 })
 
-app.listen(port, () => console.log("Listening on port 4000", process.env.SUCCESS_URL))
+app.listen(port, () => console.log("Listening on port 4000. Testing env", process.env.SUCCESS_URL))
