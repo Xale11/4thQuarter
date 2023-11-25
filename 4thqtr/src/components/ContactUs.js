@@ -72,7 +72,7 @@ const ContactUs = () => {
             </div>
             <div className="contactUsMsg">
             <div>Enter Your Message:</div>
-                <textarea name="" id="" cols="30" rows="10" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" required></textarea>
             </div>
             <button type='submit' className='contactUsSend'>Send</button>
         </form>

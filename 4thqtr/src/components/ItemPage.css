@@ -243,6 +243,12 @@
 
 @media screen and (max-width: 430px) and (orientation: portrait) {
 /*large mobile - portrait*/
+    .mainImage{
+        height: 35vh;
+    }
+    .mainImage img{
+        height: 100%;
+    }
     .itemPageContainer{
         flex-direction: column;
         align-items: center;
@@ -250,19 +256,22 @@
     .secondaryImages{
         flex-direction: row;
         width: 100%;
-        height: fit-content;
+        height: 10em;
         gap: 2em;
         overflow-x: auto;
         padding-left: 1em;
+
     }
     .secondaryImages img{
-        width: 15vw;
+        width: 20vw;
         object-fit: cover;
+        height: 100%;
     }
     .mainImageDetails{
         width: 97%;
         flex-direction: column-reverse;
     }
+    
 }
 
 @media screen and (orientation: landscape) and (max-height: 430px){

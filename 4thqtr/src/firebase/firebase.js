@@ -422,4 +422,3 @@ export const updateStockCount = async (arr) => {
     console.error(error)
   }
 }
-

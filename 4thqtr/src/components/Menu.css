@@ -1,12 +1,12 @@
 .menu{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     background-color: rgba(0,0,0,0.7);
     position: relative;
     align-items: center;
-    justify-content: space-around;
+    overflow: hidden;
 }
 
 .menuLink{
@@ -16,6 +16,7 @@
     width: 50%;
     color: black;
     cursor: pointer;
+    margin-top: 1.5em;
 }
 
 .closeMenu{

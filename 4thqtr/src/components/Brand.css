@@ -44,7 +44,7 @@
 .brandMsgWriting{
     width: fit-content;
     text-align: left;
-    
+    white-space:pre-wrap;
 }
 
 .brandSlideshow{
@@ -99,7 +99,8 @@
 /*large mobile - portrait*/
     .brandMsgContent{
         width: 100%;
-        font-size: 1em;
+        font-size: .85em;
+        line-height: 1.7em;
     }
     .brandSlideshow{
         display: none;
@@ -110,7 +111,8 @@
 /*mobile - landscape*/
     .brandMsgContent{
         width: 100%;
-        font-size: 1em;
+        font-size: .85em;
+        line-height: 1.7em;
     }
     .brandSlideshow{
         display: none;

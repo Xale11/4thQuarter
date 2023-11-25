@@ -89,6 +89,7 @@ const BrandMsg = () => {
             <div className="brandMsgContainer">
                 <div className="brandMsgTitle">Brand Message and Values:</div>
                 <div className="backHome" onClick={() => navigate("/cms")}>Back to Content Manager</div>
+                <div className="resetBtn">Reset to Original</div>
                 <form className='form'>
                     <div className="formTitle">Our Beliefs:</div>
                     <textarea name="" id="" cols="30" rows="10" ref={beliefMsg} value={belief?.value} onChange={(e) => setBelief({value: e.target.value, message: e.target.value.split(/\n\s*\n/)})}></textarea>
@@ -105,8 +106,7 @@ const BrandMsg = () => {
                     <button className='submitMsg' onClick={(e) => submitMsg(e, "values")}>Submit</button>
                 </form>
             </div>
-            <div className="resetBtn">Reset to Original</div>
-            <div className=''></div>
+            
         </div>
     )
   }

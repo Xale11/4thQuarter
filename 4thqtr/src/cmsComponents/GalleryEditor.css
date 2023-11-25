@@ -22,7 +22,7 @@
     padding: 1em;
     color: white;
     border-radius: 1em;
-
+    overflow-y: auto;
 }
 
 .metaData{
