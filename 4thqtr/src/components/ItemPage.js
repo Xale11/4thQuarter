@@ -11,6 +11,7 @@ import { useStateContext } from '../context/context'
 import Cart from './Cart'
 import { FiMenu } from 'react-icons/fi'
 import Menu from './Menu'
+import Credits from './Credits'
 
 const ItemPage = () => {
 
@@ -215,15 +216,15 @@ const ItemPage = () => {
         {showCart && <div className="cartAbsolute">
           <Cart/>
         </div>}
-        <div className="cartIcon" onClick={() => setShowCart(true)}>
+        <div className="cartIcon mbHide" onClick={() => setShowCart(true)}>
                 <BiSolidCart/>
                 {cart?.length > 0 && <div>{amount}</div>}
         </div>
-        <div className="menuIcon" onClick={() => setShowMenu(true)}>
+        <div className="menuIcon mbHide" onClick={() => setShowMenu(true)}>
             <FiMenu/>
         </div>
-            <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
-            <div className="navItems black">
+            <img src={logo} alt="" className='logoIcon mbHide' onClick={() => navigate("/")}/>
+            <div className="navItems black mbHide">
             <div className="navItem" onClick={() => navigate("/")}>Home</div>
             <div className="navItem" onClick={() => navigate("/shop")}>Shop</div>
             <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
@@ -231,7 +232,7 @@ const ItemPage = () => {
             <div className="navItem" onClick={() => navigate("/contact")}>Contact</div>
             <div className="navItem" onClick={() => navigate("/policies")}>Policies</div>
         </div>
-        <div className="socialsList">
+        <div className="socialsList mbHide">
           <AiFillInstagram onClick={() => {window.open(`${info?.insta?.link}`)}}/>
           <BiLogoTiktok onClick={() => {window.open(`${info?.tiktok?.link}`)}}/>
           <IoMail onClick={() => navigate("/contact")}/>
@@ -293,6 +294,78 @@ const ItemPage = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="mobileItemPage">
+            <div className="mobileNav">
+                <div className="mobileNavItem">
+                    <div className="mbMenuIcon" onClick={() => setShowMenu(true)}>
+                        <FiMenu/>
+                    </div>
+                    <img src={logo} alt="" className='mbLogoIcon' onClick={() => navigate("/")}/>
+                    <div className="mbCartIcon" onClick={() => setShowCart(true)}>
+                            <BiSolidCart/>
+                            {cart?.length > 0 && <div>{amount}</div>}
+                    </div>
+                </div>
+                <div className="mobileNavSocials">
+                    <AiFillInstagram onClick={() => {window.open(`${info?.insta?.link}`)}}/>
+                    <BiLogoTiktok onClick={() => {window.open(`${info?.tiktok?.link}`)}}/>
+                    <IoMail onClick={() => navigate("/contact")}/>
+                </div>
+            </div>
+            <div className="mobileMainImage">
+                <img src={image} alt="" />
+            </div>
+            <div className="mobileSecondaryImage">
+                {item?.mainImg.map((photo) => {
+                    return (
+                        <img src={photo.url} alt="" onClick={() => {setImage(photo.url)}}/>
+                    )
+                })}
+                {item?.extraImg.map((photo) => {
+                    return (
+                        <img src={photo.url} alt="" onClick={() => {setImage(photo.url)}}/>
+                    )
+                })}
+            </div>
+            <div className="mobileItemDets">
+                <div className="mobileScTitle">{item?.name}</div>
+                <div className="mobileScDets"></div>
+                <div className="mobileScDets price">£{parseFloat(item?.defaultPrice + sizeAdd.toFixed(2)).toFixed(2)}</div>
+                <div className="mobileScDets">Colour: {item?.colour}</div>
+                <div className="mobileScDets mobileSize">Size: {item?.sizeXs?.picked ? <div className={`sizeIcon ${sizeXS && "highlight"} ${item?.sizeXs?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "xs")}>XS</div> : ""} {item?.sizeS?.picked ? <div className={`sizeIcon ${sizeS && "highlight"} ${item?.sizeS?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "s")}>S</div> : ""} {item?.sizeM?.picked ? <div className={`sizeIcon ${sizeM && "highlight"} ${item?.sizeM?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "m")}>M</div> : ""} {item?.sizeL?.picked ? <div className={`sizeIcon ${sizeL && "highlight"} ${item?.sizeL?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "l")}>L</div> : ""} {item?.sizeXl?.picked ? <div className={`sizeIcon ${sizeXL && "highlight"} ${item?.sizeXl?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "xl")}>XL</div> : ""} {item?.sizeOs?.picked ? <div className={`sizeIcon ${sizeOS && "highlight"} ${item?.sizeOs?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "os")}>OS</div> : ""}</div>
+                <div className="mobileScDets">Quantity: <input type="number" name="" id="" value={quantity} onChange={(e) => e.target.value < -1 ? setQuantity(1) : setQuantity(e.target.value)}/></div>
+            </div>
+            <div className="mobileBuyBtns">
+                <div className="buyBtn" onClick={() =>{addToBasket()}}>ADD TO BASKET</div>
+                <div className="buyBtn" onClick={() => {buyNow()}}>BUY NOW</div>
+            </div>
+            {!showDesc && <div className='keyDetailsDesc' onClick={() => setShowDesc(!showDesc)}>
+                More Info
+            </div>}
+            {showDesc && <div className='keyDetailsDescText' >
+                <p>{item?.desc.value}</p>
+                <div className='keyDetailsDesc' onClick={() => setShowDesc(!showDesc)}>Close</div>
+            </div>}
+            <div className="mobileSimTitle">You May Also Like</div>
+            <div className="mayAlsoLikeImgs">
+                {similarItems?.map((simItem) => {
+                    if (!simItem.img[0]?.url){
+                        return null
+                    } else {
+                        let img = simItem.img[0]?.url
+                        return (
+                            <div className='mayAlsoLikeCard' onClick={() => {navigate(`/shop/${simItem.id}`)}}>
+                                <img src={img} alt="" />
+                                <div>{simItem.name} - {simItem.colour}</div>
+                                <div className='price'>£{simItem.defaultPrice}</div>
+                            </div>
+                        )
+                    }
+                })}
+                
+            </div>
+            <Credits/>
         </div>
     </div>
   )

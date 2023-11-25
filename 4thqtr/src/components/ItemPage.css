@@ -3,6 +3,10 @@
     height: 0;
   }
 
+.mobileItemPage{
+    display: none;
+}
+
 .itemPage{
     display: flex;
     flex-direction: column;
@@ -10,6 +14,7 @@
     justify-content: flex-start;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .itemPageContainer{
@@ -18,6 +23,7 @@
     justify-content: center;
     gap: 1em;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .mainImage{
@@ -32,7 +38,7 @@
     height: 75vh;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-x: auto;
     gap: 1em;
 }
 
@@ -252,6 +258,7 @@
     .itemPageContainer{
         flex-direction: column;
         align-items: center;
+        display: none;
     }
     .secondaryImages{
         flex-direction: row;
@@ -271,13 +278,254 @@
         width: 97%;
         flex-direction: column-reverse;
     }
-    
+    .mayAlsoLike{
+        display: none;
+    }
+    .mbHide{
+        display: none;
+    }
+    .mobileItemPage{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: max-content;
+        gap: 1em;
+        margin-top: 2em;
+    }
+    .mobileNav{
+        position: fixed;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        background-color: white;
+        z-index: 5;
+    }
+    .mbLogoIcon{
+        width: 1.5em;
+        object-fit: contain;
+    }
+    .mobileNavItem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        font-size: 2em;
+    }
+    .mobileNavSocials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        gap: .5em;
+    }
+    .mobileMainImage{
+        height: 45vh;
+    }
+    .mobileMainImage img{
+        height: 100%;
+    }
+    .mobileSecondaryImage{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        height: 13vh;
+        overflow-x: auto;
+        padding: 0em 1em;
+    }
+    .mobileSecondaryImage img{
+        height: 100%;
+    }
+    .mobileItemDets{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0em 1em;
+    }
+    .mobileScTitle{
+        font-size: 1.5em;
+    }
+    .mobileSize{
+        display: flex;
+    }
+    .mobileSize div{
+        margin-left: 1em;
+    }
+    .mobileScDets input{
+        width: 3em;
+    }
+    .mobileBuyBtns{
+        color: white;
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .mobileSimItems{
+        width: 100vw;
+    }
+    .mobileSimTitle{
+        font-size: 1.5em;
+    }
+    .mbLogo{
+        position: fixed;
+        background-color: green;
+        width: 100vw;
+    }
+    .mbSocials{
+        position: fixed;
+        top: 2em;
+        background-color: red;
+        width: 100vw;
+    }
 }
 
 @media screen and (orientation: landscape) and (max-height: 430px){
-/*mobile - landscape*/
+/*mobile - landscape*/ 
+    .itemPage{
+        overflow: auto;
+        height: max-content;
+    }
+    .itemPageContainer{
+       
+        height: max-content;
+    }
+    .mainImageDetails{
+        
+        height: max-content;
+    }
 }
 
 @media screen and (max-width: 320px){
 /*optional - iphone 4*/
+    .itemPage{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .itemPageContainer{
+        display: none;
+        height: 200vh;
+        overflow-y: auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .secondaryImages{
+        height: 5em;
+        width: 20vw;
+    }
+
+    .secondaryImages img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainImage{
+        width: 100%;
+    }
+
+    .mainImageDetails{
+        height: fit-content;
+    }
+    .mbHide{
+        display: none;
+    }
+    .mobileItemPage{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: max-content;
+        gap: 1em;
+        margin-top: 2em;
+    }
+    .mobileNav{
+        position: fixed;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        background-color: white;
+        z-index: 5;
+    }
+    .mbLogoIcon{
+        width: 1.5em;
+        object-fit: contain;
+    }
+    .mobileNavItem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        font-size: 2em;
+    }
+    .mobileNavSocials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        gap: .5em;
+    }
+    .mobileMainImage{
+        height: 45vh;
+    }
+    .mobileMainImage img{
+        height: 100%;
+    }
+    .mobileSecondaryImage{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        height: 13vh;
+        overflow-x: auto;
+        padding: 0em 1em;
+    }
+    .mobileSecondaryImage img{
+        height: 100%;
+    }
+    .mobileItemDets{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0em 1em;
+    }
+    .mobileScTitle{
+        font-size: 1.5em;
+    }
+    .mobileSize{
+        display: flex;
+    }
+    .mobileSize div{
+        margin-left: 1em;
+    }
+    .mobileScDets input{
+        width: 3em;
+    }
+    .mobileBuyBtns{
+        color: white;
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .mobileSimItems{
+        width: 100vw;
+    }
+    .mobileSimTitle{
+        font-size: 1.5em;
+    }
+    .mbLogo{
+        position: fixed;
+        background-color: green;
+        width: 100vw;
+    }
+    .mbSocials{
+        position: fixed;
+        top: 2em;
+        background-color: red;
+        width: 100vw;
+    }
 }

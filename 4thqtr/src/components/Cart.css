@@ -331,11 +331,13 @@
     .cartContents{
         height: 65%;
     }
-    .cartCheckout{
-        height: 20%;
-    }
     .cartInfo img{
         max-width: 45%;
+    }
+    .cartCheckout{
+        position: fixed;
+        bottom: 0;
+        height: 20%;
     }
 }
 
