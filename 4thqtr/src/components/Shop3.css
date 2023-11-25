@@ -394,6 +394,9 @@
     .shopContent{
         display: none;
     }
+    .mbShopHide{
+        display: none;
+    }
     .mobileShopPage{
         display: flex;
         flex-direction: column;
@@ -459,7 +462,7 @@
     .shopContent{
         display: none;
     }
-    .mbHide{
+    .mbShopHide{
         display: none;
     }
     .mobileShopPage{
@@ -488,6 +491,25 @@
     .mbLogoIcon{
         width: 1.5em;
         object-fit: contain;
+    }
+    .mbCartIcon{
+        display: flex;
+    }
+    .mbCartIcon div{
+        font-size: 0.3em;
+        background-color: var(--red);
+        border-radius: 50%;
+        height: 1em;
+        aspect-ratio: 1/1;
+        padding: 0.25em;
+        line-height: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 0.1em;
+        position: fixed;
+        right: 1%;
     }
     .mobileNavSocials{
         display: flex;

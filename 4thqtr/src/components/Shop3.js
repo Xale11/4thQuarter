@@ -56,7 +56,7 @@ const Shop3 = () => {
             <BiSolidCart/>
             {cart?.length > 0 && <div>{amount}</div>}
         </div>
-        <img src={logo} alt="" className='logoIcon mbHide' onClick={() => navigate("/")}/>
+        <img src={logo} alt="" className='logoIcon mbShopHide' onClick={() => navigate("/")}/>
         <div className="navItems black">
           <div className="navItem" onClick={() => navigate("/")}>Home</div>
           <div className="navItem" onClick={() => navigate("/shop")} style={{color: "var(--red)"}}>Shop</div>

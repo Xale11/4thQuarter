@@ -303,8 +303,32 @@
         z-index: 5;
     }
     .mbLogoIcon{
+        margin: 0.25em 0em;
         width: 1.5em;
         object-fit: contain;
+        align-self: center;
+    }
+    .mbMenuIcon{
+        display: flex;
+    }
+    .mbCartIcon{
+        display: flex;
+    }
+    .mbCartIcon div{
+        font-size: 0.3em;
+        background-color: var(--red);
+        border-radius: 50%;
+        height: 1em;
+        aspect-ratio: 1/1;
+        padding: 0.25em;
+        line-height: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 0.1em;
+        position: fixed;
+        right: 1%;
     }
     .mobileNavItem{
         display: flex;

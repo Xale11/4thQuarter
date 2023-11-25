@@ -352,6 +352,11 @@
     .cartContentsTitles{
         display: none;
     }
+    .cartCheckout{
+        position: fixed;
+        bottom: 0;
+        height: 30%;
+    }
 }
 
 @media screen and (max-width: 320px){
