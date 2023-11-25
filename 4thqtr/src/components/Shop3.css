@@ -10,6 +10,10 @@
     gap: 0em;
 }
 
+.mobileShopPage{
+    display: none;
+}
+
 .menuIcon{
     display: none;
     position: absolute;
@@ -387,6 +391,43 @@
         text-align: center;
         width: 100%;
     }
+    .shopContent{
+        display: none;
+    }
+    .mobileShopPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileNav{
+        left: 0;
+    }
+    .mobileShopCards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 3em;
+        justify-content: center;
+    }
+    .mobileShopCard{
+        padding: 0.25em 0em;
+        
+        height: fit-content;
+        width: 45vw;
+        border-radius: 1em;
+    }
+    .mobileShopImg{
+        height: 25vh;
+    }
+    .mobileShopImg img{
+        height: 100%;
+        border-radius: 0.5em;
+    }
+    .mobileScTitle{
+        padding-left: 0.5em;
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.25em;
+    }
 }
 
 @media screen and (orientation: landscape) and (max-height: 430px){
@@ -414,6 +455,74 @@
     }
     .shopContent{
         height: max-content;
+    }
+    .shopContent{
+        display: none;
+    }
+    .mbHide{
+        display: none;
+    }
+    .mobileShopPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileNav{
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobileNavItem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        font-size: 2em;
+    }
+    .mbLogoIcon{
+        width: 1.5em;
+        object-fit: contain;
+    }
+    .mobileNavSocials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        gap: .5em;
+    }
+    .mobileShopCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        margin-top: 3em;
+        margin-bottom: 1em;
+    }
+    .mobileShopCard{
+        padding: 0.25em 0em;
+        
+        height: fit-content;
+        width: 20vw;
+        border-radius: 1em;
+    }
+    .mobileShopImg{
+        height: 45vh;
+    }
+    .mobileShopImg img{
+        height: 100%;
+        border-radius: 0.5em;
+    }
+    .mobileScTitle{
+        padding-left: 0.5em;
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.25em;
     }
 }
 

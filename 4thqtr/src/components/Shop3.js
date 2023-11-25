@@ -56,7 +56,7 @@ const Shop3 = () => {
             <BiSolidCart/>
             {cart?.length > 0 && <div>{amount}</div>}
         </div>
-        <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
+        <img src={logo} alt="" className='logoIcon mbHide' onClick={() => navigate("/")}/>
         <div className="navItems black">
           <div className="navItem" onClick={() => navigate("/")}>Home</div>
           <div className="navItem" onClick={() => navigate("/shop")} style={{color: "var(--red)"}}>Shop</div>
@@ -110,7 +110,68 @@ const Shop3 = () => {
                 </div> */}
             </div>
         </div>
-        <Credits/>
+        
+        <div className="mobileShopPage">
+            <div className="mobileNav">
+                <div className="mobileNavItem">
+                    <div className="mbMenuIcon" onClick={() => setShowMenu(true)}>
+                        <FiMenu/>
+                    </div>
+                    <img src={logo} alt="" className='mbLogoIcon' onClick={() => navigate("/")}/>
+                    <div className="mbCartIcon" onClick={() => setShowCart(true)}>
+                            <BiSolidCart/>
+                            {cart?.length > 0 && <div>{amount}</div>}
+                    </div>
+                </div>
+                <div className="mobileNavSocials">
+                    <AiFillInstagram onClick={() => {window.open(`${info?.insta?.link}`)}}/>
+                    <BiLogoTiktok onClick={() => {window.open(`${info?.tiktok?.link}`)}}/>
+                    <IoMail onClick={() => navigate("/contact")}/>
+                </div>
+            </div>
+            <div className="mobileShopCards">
+                {clothes?.map((item) => {
+                    let img1 = item?.img[0].url
+                    return(
+                        <div className="mobileShopCard" onClick={() => navigate(`/shop/${item.id}`)}>
+                            <div className="mobileShopImg">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="mobileScTitle">{item.name}</div>
+                            <div className="mobileScTitle">{item.colour}</div>
+                            <div className="mobileScTitle price">£{item.defaultPrice}</div>
+                        </div>
+                    )
+                })}
+                {clothes?.map((item) => {
+                    let img1 = item?.img[0].url
+                    return(
+                        <div className="mobileShopCard" onClick={() => navigate(`/shop/${item.id}`)}>
+                            <div className="mobileShopImg">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="mobileScTitle">{item.name}</div>
+                            <div className="mobileScTitle">{item.colour}</div>
+                            <div className="mobileScTitle price">£{item.defaultPrice}</div>
+                        </div>
+                    )
+                })}
+                {clothes?.map((item) => {
+                    let img1 = item?.img[0].url
+                    return(
+                        <div className="mobileShopCard" onClick={() => navigate(`/shop/${item.id}`)}>
+                            <div className="mobileShopImg">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="mobileScTitle">{item.name}</div>
+                            <div className="mobileScTitle">{item.colour}</div>
+                            <div className="mobileScTitle price">£{item.defaultPrice}</div>
+                        </div>
+                    )
+                })}
+            </div>
+            <Credits/>
+        </div>
     </div>
   )
 }
