@@ -329,8 +329,7 @@ const ItemPage = () => {
                 })}
             </div>
             <div className="mobileItemDets">
-                <div className="mobileScTitle">{item?.name}</div>
-                <div className="mobileScDets"></div>
+                <div className="mobileScDets mbScTitle">{item?.name}</div>
                 <div className="mobileScDets price">£{parseFloat(item?.defaultPrice + sizeAdd.toFixed(2)).toFixed(2)}</div>
                 <div className="mobileScDets">Colour: {item?.colour}</div>
                 <div className="mobileScDets mobileSize">Size: {item?.sizeXs?.picked ? <div className={`sizeIcon ${sizeXS && "highlight"} ${item?.sizeXs?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "xs")}>XS</div> : ""} {item?.sizeS?.picked ? <div className={`sizeIcon ${sizeS && "highlight"} ${item?.sizeS?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "s")}>S</div> : ""} {item?.sizeM?.picked ? <div className={`sizeIcon ${sizeM && "highlight"} ${item?.sizeM?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "m")}>M</div> : ""} {item?.sizeL?.picked ? <div className={`sizeIcon ${sizeL && "highlight"} ${item?.sizeL?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "l")}>L</div> : ""} {item?.sizeXl?.picked ? <div className={`sizeIcon ${sizeXL && "highlight"} ${item?.sizeXl?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "xl")}>XL</div> : ""} {item?.sizeOs?.picked ? <div className={`sizeIcon ${sizeOS && "highlight"} ${item?.sizeOs?.sizeStock == 0 && "sizeOutOfStock"}`} onClick={(e) => pickSize(e, "os")}>OS</div> : ""}</div>

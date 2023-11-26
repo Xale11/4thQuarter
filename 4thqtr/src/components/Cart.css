@@ -357,6 +357,11 @@
         bottom: 0;
         height: 30%;
     }
+    .cartTotalBtn{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
 }
 
 @media screen and (max-width: 320px){
