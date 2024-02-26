@@ -143,32 +143,6 @@ const Shop3 = () => {
                         </div>
                     )
                 })}
-                {clothes?.map((item) => {
-                    let img1 = item?.img[0].url
-                    return(
-                        <div className="mobileShopCard" onClick={() => navigate(`/shop/${item.id}`)}>
-                            <div className="mobileShopImg">
-                                <img src={img1} alt="" />
-                            </div>
-                            <div className="mobileScTitle">{item.name}</div>
-                            <div className="mobileScTitle">{item.colour}</div>
-                            <div className="mobileScTitle price">£{item.defaultPrice}</div>
-                        </div>
-                    )
-                })}
-                {clothes?.map((item) => {
-                    let img1 = item?.img[0].url
-                    return(
-                        <div className="mobileShopCard" onClick={() => navigate(`/shop/${item.id}`)}>
-                            <div className="mobileShopImg">
-                                <img src={img1} alt="" />
-                            </div>
-                            <div className="mobileScTitle">{item.name}</div>
-                            <div className="mobileScTitle">{item.colour}</div>
-                            <div className="mobileScTitle price">£{item.defaultPrice}</div>
-                        </div>
-                    )
-                })}
             </div>
             <Credits/>
         </div>
