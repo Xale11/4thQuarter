@@ -12,13 +12,13 @@ import {ref, uploadBytes, listAll, getDownloadURL, getMetadata, updateMetadata, 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC9pRV13U-RJP76e0GiOFVBOmGiwAYV3aQ",
-  authDomain: "th-quarter-393dd.firebaseapp.com",
-  projectId: "th-quarter-393dd",
-  storageBucket: "th-quarter-393dd.appspot.com",
-  messagingSenderId: "339172956882",
-  appId: "1:339172956882:web:c5c766e51f2be984c2ab0b",
-  measurementId: "G-55L2D9JGVT"
+  apiKey: "AIzaSyBFlBz74gEU6QVhFdZss9hTJQNikQuPH-4",
+  authDomain: "thqtr-54c29.firebaseapp.com",
+  projectId: "thqtr-54c29",
+  storageBucket: "thqtr-54c29.appspot.com",
+  messagingSenderId: "804797681586",
+  appId: "1:804797681586:web:318d5dba8dc2dbb9b41eab",
+  measurementId: "G-PMQCSWRNEM"
 };
 
 // Initialize Firebase
