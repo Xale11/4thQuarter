@@ -59,7 +59,7 @@ const ContactUs = () => {
           <BiLogoTiktok onClick={() => {window.open(`${info?.tiktok?.link}`)}}/>
           <IoMail onClick={() => navigate("/contact")}/>
         </div>
-        <form className="contactUsContainer" action="https://formsubmit.co/alexdiyan@outlook.com" method="POST">
+        <form className="contactUsContainer" action="https://formsubmit.co/reuelseidu16@gmail.com" method="POST">
             <div className="contactUsInfo">
                 <div className="contactUsBox">
                     <div>Enter Your Name:</div>

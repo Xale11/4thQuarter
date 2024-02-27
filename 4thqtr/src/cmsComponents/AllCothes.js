@@ -650,6 +650,10 @@ const AllCothes = () => {
                     <input type="text" required ref={clothesName}/>
                 </div>
                 <div className="newDets">
+                    <div>Colour:</div>
+                    <input type="text" required ref={colourName}/>
+                </div>
+                <div className="newDets">
                     <div>Default Price (£):</div>
                     <input type="number" step="0.01" required ref={clothesPrice}/>
                 </div>
@@ -676,11 +680,7 @@ const AllCothes = () => {
                     <div>Promo:</div>
                     <input type='checkbox' className="isPromo" onClick={(e) => {setRed(e); setIsPromo(!isPromo)}} ref={clothesPromo}></input>
                 </div>
-                <div className="newDets">
-                    <div>Colour:</div>
-                    <input type="text" required ref={colourName}/>
-                </div>
-                <div className="newDets">
+                <div className="newDets newDetsDesc">
                     <div>Description:</div>
                     <textarea type="text" required ref={clothesDesc}/>
                 </div>
@@ -809,6 +809,10 @@ const AllCothes = () => {
                                     <input type="text" required value={item.name} onChange={(e) => setItemList((prevState) => prevState.map((clothes, index) => (index == i ? {...prevState[index], name: e.target.value} : {...prevState[index]})))}/>
                                 </div>
                                 <div className="updateDets">
+                                    <div>Colour:</div>
+                                    <input className="updateDetsInput" type="text" required value={item.colour} onChange={(e) => setItemList((prevState) => prevState.map((clothes, index) => (index == i ? {...prevState[index], colour: e.target.value} : {...prevState[index]})))}/>
+                                </div>
+                                <div className="updateDets">
                                     <div>Default Price (£):</div>
                                     <input type="number" required step="0.01" value={item.defaultPrice} onChange={(e) => setItemList((prevState) => prevState.map((clothes, index) => (index == i ? {...prevState[index], defaultPrice: e.target.value} : {...prevState[index]})))}/>
                                 </div>
@@ -856,10 +860,6 @@ const AllCothes = () => {
                                 <div className="updateDets">
                                     <div>Promo:</div>
                                     <input className="updateDetsInput isPromo" type='checkbox' checked={item.promo ? "checked" : ""} onClick={(e) => {setRed(e); setIsPromo(!isPromo)}} onChange={(e) => setItemList((prevState) => prevState.map((clothes, index) => (index == i ? {...prevState[index], promo: e.target.checked} : {...prevState[index]})))}></input>
-                                </div>
-                                <div className="updateDets">
-                                    <div>Colour:</div>
-                                    <input className="updateDetsInput" type="text" required value={item.colour} onChange={(e) => setItemList((prevState) => prevState.map((clothes, index) => (index == i ? {...prevState[index], colour: e.target.value} : {...prevState[index]})))}/>
                                 </div>
                                 <div className="updateDets">
                                     <div>Description:</div>

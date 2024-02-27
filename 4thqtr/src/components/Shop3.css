@@ -219,6 +219,7 @@
     padding: 0em 1em;
     align-items: flex-start;
     line-height: 1.25em;
+    text-align: left;
 }
 
 .scBtns{

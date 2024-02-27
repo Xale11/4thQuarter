@@ -78,36 +78,6 @@ const Shop3 = () => {
                         <Item item={item}></Item>
                     )
                 })}
-                {/* <div className="shopCard1">
-                    <div className="scImg">
-                        <div className="buyNow">BUY NOW </div>
-                        <img src={shirt1} alt="" />
-                        <div className="shopCardDets">
-                            <div className="scInfo">
-                                <div className="scTitle">ONE OF ONE GRAPHIC TEE</div>
-                                <div className="scTitle price">£19.99</div>
-                                <div className="scBtns">
-                                    <div>ADD TO BASKET</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="shopCard2">
-                    <div className="scImg">
-                        <div className="buyNow">BUY NOW </div>
-                        <img src={shorts1} alt="" />
-                        <div className="shopCardDets">
-                            <div className="scInfo">
-                                <div className="scTitle">ONE OF ONE GRAPHIC TEE</div>
-                                <div className="scTitle price">£19.99</div>
-                                <div className="scBtns">
-                                    <div>ADD TO BASKET</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
         

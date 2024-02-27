@@ -130,7 +130,8 @@ const Delivery = () => {
                                     <input required type="number" value={rate.shipMax} onChange={(e) => {setShipping(state => (state.map((item, x) => x == i ? {...item, shipMax: e.target.value <= parseInt(rate.shipMin) ?(parseInt(rate.shipMin)) : e.target.value} : {...item})))}}/>
                                 </div>
                                 <button style={{backgroundColor: "green"}} onClick={(e) => updateRate(e, rate.id, i)}>Update</button>
-                                <button>{!isDelete ? <div className='delBtn' onClick={(e) => {e.preventDefault(); setIsDelete(!isDelete)}}>Delete</div> : <div className='delBtn' onClick={(e) => {e.preventDefault(); setIsDelete(!isDelete)}}>Close Delete</div>}{isDelete && <div className='deleteConfirm' onClick={(e) => {deleteRate(e, rate.id)}}>Confirm Delete</div>}</button>
+                                <button>{!isDelete ? <div className='delBtn' onClick={(e) => {e.preventDefault(); setIsDelete(!isDelete)}}>Delete</div> : <div className='delBtn' onClick={(e) => {e.preventDefault(); setIsDelete(!isDelete)}}>Close
+                                </div>}{isDelete && <div className='deleteConfirm' onClick={(e) => {deleteRate(e, rate.id)}}>Confirm Delete</div>}</button>
                                 <button style={{backgroundColor: "darkgreen"}} onClick={() => fetchShippingRates()}>Reset to Original</button>
                             </form>
                         )

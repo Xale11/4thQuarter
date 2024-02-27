@@ -45,7 +45,12 @@
 }
 
 .newDets textarea{
+  width: 50%;
+  height: 100%;
+}
 
+.newDetsDesc{
+    height: 5em;
 }
 
 .colourItems{
