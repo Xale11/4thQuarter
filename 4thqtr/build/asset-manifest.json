@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.538887ac.css",
-    "main.js": "/static/js/main.ad00e5c4.js",
+    "main.js": "/static/js/main.300c3402.js",
     "static/media/homeTest.jpg": "/static/media/homeTest.03b166fcaa1ef272ac64.jpg",
     "static/media/Dhurjati-Regular.ttf": "/static/media/Dhurjati-Regular.c66f1204a3752dc6c717.ttf",
     "static/media/test.png": "/static/media/test.88496be33b3904c8c681.png",
@@ -9,10 +9,10 @@
     "static/media/shop.png": "/static/media/shop.4e9778fcc11da820f88d.png",
     "index.html": "/index.html",
     "main.538887ac.css.map": "/static/css/main.538887ac.css.map",
-    "main.ad00e5c4.js.map": "/static/js/main.ad00e5c4.js.map"
+    "main.300c3402.js.map": "/static/js/main.300c3402.js.map"
   },
   "entrypoints": [
     "static/css/main.538887ac.css",
-    "static/js/main.ad00e5c4.js"
+    "static/js/main.300c3402.js"
   ]
 }
