@@ -105,7 +105,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-self: flex-start;
-    white-space: pre-wrap
+    white-space: pre-wrap;
 }
 
 .keyDetailsDescText p{

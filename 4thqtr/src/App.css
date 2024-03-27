@@ -6,7 +6,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  font-family: "Dhurjati";
+  font-family: "Dhurjati"; /*Dhurjati (old font)*/
   overflow: hidden;
   position: relative;
 }
