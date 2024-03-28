@@ -47,7 +47,7 @@ const ContactUs = () => {
         </div>
             <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
             <div className="navItems black">
-            <div className="navItem" onClick={() => navigate("/")}>Home</div>
+            {/* <div className="navItem" onClick={() => navigate("/")}>Home</div> */}
             <div className="navItem" onClick={() => navigate("/shop")}>Shop</div>
             <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
             <div className="navItem" onClick={() => navigate("/brand")}>Our Vision</div>
@@ -71,12 +71,14 @@ const ContactUs = () => {
                 </div>
             </div>
             <div className="contactUsMsg">
-            <div>Enter Your Message:</div>
+            <div className='contactUsMsgTitle'>Enter Your Message:</div>
                 <textarea name="message" id="" cols="30" rows="10" required></textarea>
             </div>
             <button type='submit' className='contactUsSend'>Send</button>
         </form>
-        <Credits/>
+        <div className='creditsWrapper'>
+            <Credits />
+        </div>
     </div>
   )
 }

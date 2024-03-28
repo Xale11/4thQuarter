@@ -72,15 +72,15 @@ const Gallery = () => {
             <FiMenu/>
         </div>
         <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
-        <div className="navItems galleryBlack" >
-          <div className="navItem" onClick={() => navigate("/")}>Home</div>
+        <div className="navItems black" style={{"color":'white'}} >
+          {/* <div className="navItem" onClick={() => navigate("/")}>Home</div> */}
           <div className="navItem" onClick={() => navigate("/shop")}>Shop</div>
           <div className="navItem" onClick={() => navigate("/gallery")} style={{color: "var(--red)"}}>Gallery</div>
           <div className="navItem" onClick={() => navigate("/brand")}>Our Vision</div>
           <div className="navItem" onClick={() => navigate("/contact")}>Contact</div>
           <div className="navItem" onClick={() => navigate("/policies")}>Policies</div>
         </div>
-        <div className="socialsList galleryBlack">
+        <div className="socialsList galleryBlack" >
           <AiFillInstagram onClick={() => {window.open(`${info?.insta?.link}`)}}/>
           <BiLogoTiktok onClick={() => {window.open(`${info?.tiktok?.link}`)}}/>
           <IoMail onClick={() => navigate("/contact")}/>

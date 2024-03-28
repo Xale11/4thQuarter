@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100vw;
     overflow-y: auto;
+    gap: 0.5em;
 }
 
 .contactUsContainer{
@@ -71,6 +72,19 @@
 .bottom{
     position: absolute;
     bottom: 0;
+}
+
+@media screen and (min-width: 2000px) {
+/* Desktops*/
+    .contactUsBox{
+        font-size: 2.75em;
+    }
+    .contactUsMsgTitle{
+        font-size: 2.25em;
+    }
+    .contactUsSend{
+        font-size: 2.75em;
+    }
 }
 
 @media screen and (max-width: 1550px) and (min-width: 1441px) {

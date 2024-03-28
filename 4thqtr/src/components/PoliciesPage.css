@@ -6,7 +6,7 @@
     height: 100vh;
     width: 100vw;
     overflow-y: auto;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .policiesPageContainer{
@@ -29,6 +29,14 @@
     align-items: flex-start;
     font-size: 1.75em;
     white-space: pre-wrap;
+    text-align: left;
+}
+
+@media screen and (min-width: 2000px) {
+/* Desktops*/
+    .policyInfo{
+        font-size: 3em;
+    }
 }
 
 @media screen and (max-width: 1550px) and (min-width: 1441px) {

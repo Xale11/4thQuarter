@@ -10,6 +10,7 @@ import Cart from './Cart'
 import { useStateContext } from '../context/context'
 import { FiMenu } from 'react-icons/fi'
 import Menu from './Menu'
+import Credits from './Credits'
 
 const Brand = () => {
 
@@ -75,8 +76,8 @@ const Brand = () => {
             <FiMenu/>
         </div>
         <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
-        <div className="navItems" style={{color: "var(--black)"}}>
-          <div className="navItem" onClick={() => navigate("/")}>Home</div>
+        <div className="navItems black" style={{color: "var(--black)"}}>
+          {/* <div className="navItem" onClick={() => navigate("/")}>Home</div> */}
           <div className="navItem" onClick={() => navigate("/shop")}>Shop</div>
           <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
           <div className="navItem" onClick={() => navigate("/brand")} style={{color: "var(--red)"}}>Our Vision</div>
@@ -103,15 +104,16 @@ const Brand = () => {
                     <div className="brandMsgWriting"><div>{brandMsgs?.values.value}</div></div>
                 </div>
             </div>
-            <div className="brandSlideshow">
-                {/* <div className="brandSlideshowTitle">Meet some of the <span className='red'>squad</span></div>
+            {/* <div className="brandSlideshow">
+                <div className="brandSlideshowTitle">Meet some of the <span className='red'>squad</span></div>
                 {photos?.map((photo, i) => {
                     return(
                         <img src={photo.url} alt="" className={`slideImg ${i == currentIndex ? "active" : ""}`}/>
                     )
-                })} */}
-            </div>
+                })}
+            </div> */}
         </div>   
+        <Credits/>
     </div>
   )
 }

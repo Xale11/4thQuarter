@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 0em;
+    gap: 0.5em;
 }
 
 .mobileShopPage{
@@ -31,9 +31,9 @@
 
 .cartIcon{
     position: absolute;
-    top: 0%;
+    top: 2%;
     right: 2%;
-    font-size: 4em;
+    font-size: 2.5em;
     cursor: pointer;
     transition: all 300ms linear;
     z-index: 4;
@@ -243,6 +243,25 @@
     font-family: monospace;
 }
 
+@media screen and  (min-width: 2000px) {
+    /*Desktop*/
+    .black{
+        font-size: 2.5em;
+    }
+    .scInfo{
+        font-size: 2.5em;
+    }
+    .cartIcon{
+        font-size: 4em;
+    }
+    .socialsList{
+        font-size: 3em;
+    }
+    .logoIcon{
+        width: 4em;
+    }
+}
+
 @media screen and (max-width: 1550px) and (min-width: 1441px) {
 /* Large Laptops*/
 }
@@ -250,7 +269,10 @@
 @media screen and (max-width: 1440px) {
 /* Normal Laptops*/
     .black{
-        font-size: 3em;
+        font-size: 1.5em;
+    }
+    .scInfo{
+        font-size: 1.25em;
     }
 }
 
@@ -272,6 +294,9 @@
     .shopCard1:hover{
         height: 45%;
     }
+    .black{
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 920px) and (min-width: 821px) {
@@ -281,6 +306,9 @@
     }
     .shopCard1:hover{
         height: 45%;
+    }
+    .black{
+        font-size: 2em;
     }
 }
 
@@ -294,6 +322,9 @@
     }
     .shopCards{
         row-gap: 6em;
+    }
+    .black{
+        font-size: 2em;
     }
 }
 

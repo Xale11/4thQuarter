@@ -58,7 +58,7 @@ const Shop3 = () => {
         </div>
         <img src={logo} alt="" className='logoIcon mbShopHide' onClick={() => navigate("/")}/>
         <div className="navItems black">
-          <div className="navItem" onClick={() => navigate("/")}>Home</div>
+          {/* <div className="navItem" onClick={() => navigate("/")}>Home</div> */}
           <div className="navItem" onClick={() => navigate("/shop")} style={{color: "var(--red)"}}>Shop</div>
           <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
           <div className="navItem" onClick={() => navigate("/brand")}>Our Vision</div>

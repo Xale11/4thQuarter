@@ -9,6 +9,7 @@
     color: var(--black);
     position: relative;
     overflow-y: auto;
+    gap: 0.5em;
 }
 
 .brandContent{
@@ -17,6 +18,7 @@
     display: flex;
     height: 100%;
     gap: 2em;
+    margin-bottom: 5em;
 }
 
 .brandMsgContent{
@@ -26,6 +28,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 3em;
+    text-align: left;
 }
 
 .brandMsgSection{
@@ -39,12 +42,13 @@
 
 .brandMsgTitle{
     width: 10em;
+    margin-left: 1em;
 }
 
 .brandMsgWriting{
     width: fit-content;
     text-align: left;
-    white-space:pre-wrap;
+    white-space: pre-wrap;
 }
 
 .brandSlideshow{
@@ -63,6 +67,13 @@
 .slideImg{
     width: 90%;
     display: none;
+}
+
+@media screen and (min-width: 2000px) {
+/* Desktops*/
+    .brandMsgContent{
+        font-size: 1.75em;
+    }
 }
 
 @media screen and (max-width: 1550px) and (min-width: 1441px) {

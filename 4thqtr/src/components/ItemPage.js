@@ -225,7 +225,7 @@ const ItemPage = () => {
         </div>
             <img src={logo} alt="" className='logoIcon mbHide' onClick={() => navigate("/")}/>
             <div className="navItems black mbHide">
-            <div className="navItem" onClick={() => navigate("/")}>Home</div>
+            {/* <div className="navItem" onClick={() => navigate("/")}>Home</div> */}
             <div className="navItem" onClick={() => navigate("/shop")}>Shop</div>
             <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
             <div className="navItem" onClick={() => navigate("/brand")}>Our Vision</div>

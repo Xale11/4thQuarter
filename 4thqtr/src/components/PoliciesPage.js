@@ -55,7 +55,7 @@ const PoliciesPage = () => {
         </div>
             <img src={logo} alt="" className='logoIcon' onClick={() => navigate("/")}/>
             <div className="navItems black">
-            <div className="navItem" onClick={() => navigate("/")}>Home</div>
+            {/* <div className="navItem" onClick={() => navigate("/")}>Home</div> */}
             <div className="navItem" onClick={() => navigate("/shop")}>Shop</div>
             <div className="navItem" onClick={() => navigate("/gallery")}>Gallery</div>
             <div className="navItem" onClick={() => navigate("/brand")}>Our Vision</div>

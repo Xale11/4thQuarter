@@ -107,7 +107,7 @@ const GalleryEditor = () => {
                         </div>
                         <button className='submitMsg'>Submit</button>
                 </form>
-                <div className="formTitle">Squad Photos List:</div>
+                <div className="formTitle">Gallery Photos List:</div>
                 <div className="squadPhotoList">
                     {photos?.map((photo, i) => {
                         return (
