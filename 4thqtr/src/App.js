@@ -21,6 +21,7 @@ import Login from './components/Login';
 import Success from './components/Success';
 import Cancel from './components/Cancel';
 import { Helmet } from 'react-helmet';
+import Email from './cmsComponents/Email';
 
 
 
@@ -54,6 +55,7 @@ function App() {
               <Route path="/cms/squad" element={<Squad/>}/>
               <Route path="/cms/gallery" element={<GalleryEditor/>}/>
               <Route path="/cms/shipping" element={<Delivery/>}/>
+              <Route path="/cms/email" element={<Email/>}/>
               <Route path="/shop/:itemId" element={<ItemPage/>}/>
             </Routes>
           </BrowserRouter>

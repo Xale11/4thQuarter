@@ -4,7 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore"
 import { getStorage } from "firebase/storage"
 import { getAuth } from "firebase/auth"
-import { addDoc, getDocs, getDoc, collection, serverTimestamp, setDoc, doc, deleteDoc, query, where, onSnapshot, orderBy, updateDoc, or, limit } from 'firebase/firestore'
+import { addDoc, getDocs, getDoc, collection, serverTimestamp, setDoc, doc, deleteDoc, query, where, onSnapshot, orderBy, updateDoc, or, limit, arrayUnion, arrayRemove } from 'firebase/firestore'
 import {ref, uploadBytes, listAll, getDownloadURL, getMetadata, updateMetadata, deleteObject} from "firebase/storage"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -420,5 +420,16 @@ export const updateStockCount = async (arr) => {
     }
   } catch (error) {
     console.error(error)
+  }
+}
+
+export const fetchEmails = async () => {
+  try {
+      let data = await getDoc(doc(db, "emails", "emailList"))
+      data = data.data()
+      return data
+  } catch (error) {
+      console.error(error)
+      return ["ERROR"]
   }
 }

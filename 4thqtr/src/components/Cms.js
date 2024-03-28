@@ -35,6 +35,7 @@ const Cms = () => {
           <div className="cmsLink" onClick={() => navigate("/cms/contact")}>Contact Info</div>
           <div className="cmsLink" onClick={() => navigate("/cms/shipping")}>Shipping Fees</div>
           <div className="cmsLink" onClick={() => navigate("/cms/policies")}>Return Policies</div>
+          <div className="cmsLink" onClick={() => navigate("/cms/email")}>Email List</div>
           <div className="cmsLink" onClick={() => navigate("/")}>Back to Website</div>
         </div>
         

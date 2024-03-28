@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.538887ac.css",
-    "main.js": "/static/js/main.300c3402.js",
+    "main.css": "/static/css/main.1541b7bc.css",
+    "main.js": "/static/js/main.291cc651.js",
     "static/media/homeTest.jpg": "/static/media/homeTest.03b166fcaa1ef272ac64.jpg",
     "static/media/Dhurjati-Regular.ttf": "/static/media/Dhurjati-Regular.c66f1204a3752dc6c717.ttf",
     "static/media/test.png": "/static/media/test.88496be33b3904c8c681.png",
     "static/media/logo.png": "/static/media/logo.85f53918e90a6726c159.png",
     "static/media/shop.png": "/static/media/shop.4e9778fcc11da820f88d.png",
     "index.html": "/index.html",
-    "main.538887ac.css.map": "/static/css/main.538887ac.css.map",
-    "main.300c3402.js.map": "/static/js/main.300c3402.js.map"
+    "main.1541b7bc.css.map": "/static/css/main.1541b7bc.css.map",
+    "main.291cc651.js.map": "/static/js/main.291cc651.js.map"
   },
   "entrypoints": [
-    "static/css/main.538887ac.css",
-    "static/js/main.300c3402.js"
+    "static/css/main.1541b7bc.css",
+    "static/js/main.291cc651.js"
   ]
 }
